@@ -1,0 +1,263 @@
+﻿Path URL,Description,Entity,Error Response,HTTP Methods,Success Response
+/api/v1/employee/all,Get All Employees,Employee,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of Employees.
+/api/v1/employee/{employee_no},Get Employees by employee number,Employee,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Employee Object
+/api/v1/employee/office/{office_code},Get Employees by office_code,Employee,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of Employees.
+/api/v1/employee/city/{city},Get Employees by city,Employee,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of Employees.
+/api/v1/employee/add,"Add new Employee ",Employee,"{
+""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”
+}",POST,"{
+""timeStamp"":""2023-06-08"",
+""message"": ""Employee details added successfully”
+}"
+/api/v1/employee/update/{employee_number},Update Employee by employee_number,Employee,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",PUT,"{
+""timeStamp"":""2023-06-08"",
+""message"": ""Employee details updated successfully”
+}"
+/api/v1/employee/{old_employee_number}/reports_to/{new_employee_number},Update employee’s reporting hierarchy,Employee,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",PUT,"{
+""timeStamp"":""2023-06-08"",
+""message"": ""Employee details updated successfully”
+}"
+/api/v1/employee/role/{role},Update the role of employee,Employee,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",PUT,"{
+""timeStamp"":""2023-06-08"",
+""message"": ""Employee role updated successfully”
+}"
+/api/v1/employee/{employee_number}/map_to_office/{office_code},"Update Employee office details by office_code and employee_number ",Employee,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",PUT,"{
+""timeStamp"":""2023-06-08"",
+""message"": ""Employee office details updated successfully”
+}"
+/api/v1/employee/delete/{employee_number},Delete Employee by employee_number,Employee,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",DELETE,"{
+""timeStamp"":""2023-06-08"",
+""message"": ""Employee details deleted successfully”
+}"
+/api/v1/office/all,Get All Offices,Office,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of Offices.
+/api/v1/office/{office_code},Get Office by office_code,Office,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Office Object
+/api/v1/office/{city1}/{city2}/{cityN},"Get office details from 
+provided list of different cities",Office,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of Employees.
+/api/v1/office/add,Add new Office,Office,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",POST,"{
+""timeStamp"":""2023-06-08"",
+""message"": ""Office details added successfully”
+}"
+/api/v1/office/{office_code}/{phone_number},Update Office with new phone number,Office,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",PUT,"{
+""timeStamp"":""2023-06-08"",
+""message"": ""Office phone number updated successfully”
+}"
+/api/v1/office/update/{office_code},Update Office Object,Office,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",PUT,"{
+""timeStamp"":""2023-06-08"",
+""message"": ""Office details updated successfully”
+}"
+/api/v1/orderdetails/all,Get All OrderDetails,OrderDetails,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of OrderDetails.
+/api/v1/orderdetails/{order_number},Get OrderDetails by order_number,OrderDetails,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of OrderDetails
+/api/v1/orderdetails/{order_number}/{product_code},"Get OrderDetails ",OrderDetails,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,OrderDetails Object
+/api/v1/orderdetails/total_orders/{order_number},"Get Sum of all order by order_number ",OrderDetails,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Sum of OrderDetails
+/api/v1/orderdetails/total_sales,Get Total Sales of OrderDetails,OrderDetails,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Total Sales of OrderDetails
+/api/v1/orderdetails/add,Add new OrderDetails,OrderDetails,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",POST,"{
+""timeStamp"":""2023-06-08"",
+""message"": ""Order details added successfully”
+}"
+/api/v1/customer/all,Get All Customers,Customer,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of Customers.
+/api/v1/customer/{customer_number},"Get Customer by customer_number ",Customer,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Customer Object
+/api/v1/customer/office/{office_code},"Get Customers by office_code ",Customer,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of Customers.
+/api/v1/customer/customer_name/{customer_name},Get Customer by customer_name,Customer,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Customer Object.
+/api/v1/customer/sales_rep_employee_number/{sales_rep_employee_number},Get Customer by sales_rep_employee_number,Customer,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Customer Object.
+/api/v1/customer/city/{city},Get Customers by city,Customer,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of Customers.
+/api/v1/customer/country/{country},Get Customers by country,Customer,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of Customers.
+/api/v1/customer/phone/{phone},Get Customers by phone number,Customer,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Customer Object
+/api/v1/customer/contact_firstname/{contact_firstname},Get Customers by contact_firstname,Customer,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of Customers
+/api/v1/customer/contact_lastname/{contact_lastname},Get Customers by contact_lastname,Customer,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of Customers
+/api/v1/customer/credit_limit/{credit_limt},Get Customers by credit_limit,Customer,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of Customers
+/api/v1/customer/postal_code/{postal_code},Get Customers by postal_code,Customer,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of Customers
+/api/v1/customer/credit_range/{min_credit}/{max_credit},Get Customers between minimum and maximum credit range,Customer,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of Customers
+/api/v1/customer/customer_firstname/{firstname},Get Customers by firstname,Customer,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of Customers
+/api/v1/customer/greater_than/{credit_limit},Get Customers with credit limit greater than {credit_limit},Customer,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of Customers
+/api/v1/customer/less_than/{credit_limit},Get Customers with credit limit less than {credit_limit},Customer,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of Customers
+/api/v1/customer/add,Add new Office,Customer,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",POST,"{
+""timeStamp"":""2023-06-08"",
+""message"": ""Customer details added successfully”
+}"
+/api/v1/customer/update/{customer_number},Update Customer by customer_number,Customer,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",PUT,"{
+""timeStamp"":""2023-06-08"",
+""message"": ""Customer details updated successfully”
+}"
+/api/v1/customer/{customer_number}/{contact_lastname},Update Customer’s contact lastname,Customer,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",PUT,"{
+""timeStamp"":""2023-06-08"",
+""message"": ""Customer contact lastname details updated successfully”
+}"
+/api/v1/customer/{customer_number}/{contact_firstname},Update Customer’s contact firstname,Customer,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",PUT,"{
+""timeStamp"":""2023-06-08"",
+""message"": ""Customer contact firstname details updated successfully”
+}"
+/api/v1/customer/address/{customer_number},Update Customer’s address,Customer,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",PUT,"{
+""timeStamp"":""2023-06-08"",
+""message"": ""Customer address updated successfully”
+}"
+/api/v1/payment/all,Get All Payments,Payment,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of Payments.
+/api/v1/payment/{customer_number},"Get Payment by customer_number ",Payment,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Payment Object
+/api/v1/payment/payment_date/{payment_date},Get Payment’s by payments date,Payment,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of payments.
+/api/v1/payment/customer_payment_date/{payment_date},Get Customer’s by payments date,Payment,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of Customers
+/api/v1/payment/check_number/{check_number},Get Payment’s by check_number,Payment,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of payments.
+/api/v1/payment/total_amount/{customer_number},Get total amount of Payments by customer_number,Payment,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Total amount of payments
+/api/v1/payment/customers/{check_number},Get Customer’s by check_number,Payment,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of Customers
+/api/v1/payment/max_amount/{amount},Get Customer by max payment amount,Payment,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Customer Object
+/api/v1/payment/customers/{startPaydate}/{endpaydate},Get Customer between start payment_date and  end payment_date,Payment,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of Customers
+/api/v1/payment/add,Add new Payment,Payment,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",POST,"{
+""timeStamp"":""2023-06-08"",
+""message"": ""Payment details added successfully”
+}"
+/api/v1/payment/check_number/{check_number}/{customer_number},Update Payment’s check_number by customer_number,Payment,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",PUT,"{
+""timeStamp"":""2023-06-08"",
+""message"": ""Check number updated successfully”
+}"
+/api/v1/payment/amount/{amount}/{check_number},"Update Payment’s amount by check_number ",Payment,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",PUT,"{
+""timeStamp"":""2023-06-08"",
+""message"": ""Amount updated successfully”
+}"
+/api/v1/orders/all,Get All Orders,Orders,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of Orders.
+/api/v1/orders/{order_number},Get Orders by order_number,Orders,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Orders Object
+/api/v1/orders/{customer_number},Get Customer’s by customer_number,Orders,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of Orders.
+/api/v1/orders/order_date/{order_date},Get Orders by order_date,Orders,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of Orders.
+/api/v1/orders/required_date/{required_date},Get Orders by required_date,Orders,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of Orders.
+/api/v1/orders/shipped_date/{shipped_date},Get Orders by shipped_date,Orders,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of Orders.
+/api/v1/orders/status/{status},Get Orders by status,Orders,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of Orders.
+/api/v1/orders/{customer_number}/{status},Get Orders by customer_number and status,Orders,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of Orders.
+/api/v1/orders/products_details/{order_number},Get Products by order_number,Orders,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of Product.
+/api/v1/orders/products_shipped_details,Get Products where order status is “shipped”,Orders,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of Product.
+/api/v1/orders/add,Add new Orders,Orders,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",POST,"{
+""timeStamp"":""2023-06-08"",
+""message"": ""Orders details added successfully”
+}"
+/api/v1/orders/{order_number}/{shipped_date},Update Orders shipped_date by order_number,Orders,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",PUT,"{
+""timeStamp"":""2023-06-08"",
+""message"": ""Shipped Date updated successfully”
+}"
+/api/v1/orders/{order_number}/{status},Update Orders status by order_number,Orders,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",PUT,"{
+""timeStamp"":""2023-06-08"",
+""message"": ""Order status updated successfully”
+}"
+/api/v1/product/all,Get All Products,Product,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of Product.
+/api/v1/product/{product_code},Get Product by product_code,Product,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Product Object
+/api/v1/product/name/{product_name},Get Product by product_name,Product,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Product Object
+/api/v1/product/scale/{product_scale},Get Product by product_scale,Product,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of Product.
+/api/v1/product/vendor/{product_vendor},Get Product by product_vendor,Product,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of Product.
+/api/v1/product/total_ordered_qty/{product_code},Get Total Ordered Quantity,Product,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Total Ordered Quantity
+/api/v1/product/total_sale/{product_code},Get total sales by product_code,Product,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Total sale amount for given product
+/api/v1/product/total_sale/{product_code},Get total sales by product_code,Product,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Total sale amount for given product
+/api/v1/product/total_sale/{product_code},Get total sales by product_code,Product,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Total sale amount for given product
+/api/v1/product/add,Add new Product,Product,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",POST,"{
+""timeStamp"":""2023-06-08"",
+""message"": ""Product details added successfully”
+}"
+/api/v1/product/{poduct_code}/{buy_price},Update Product’s Buy Price,Product,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",PUT,"{
+""timeStamp"":""2023-06-08"",
+""message"": ""Product Buy Price updated successfully”
+}"
+/api/v1/product/update_quantity/{product_code}/{quantity_in_stock},Update Product’s quantity_in_stock,Product,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",PUT,"{
+""timeStamp"":""2023-06-08"",
+""message"": ""Quantity in Stock details updated successfully”
+}"
+/api/v1/product/msrp/{product_code}/{msrp},Update Product’s MSRP,Product,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",PUT,"{
+""timeStamp"":""2023-06-08"",
+""message"": ""MSRP details updated successfully”
+}"
+/api/v1/product/vendor/{product_code}/{product_vendor},Update Product’s vendor,Product,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",PUT,"{
+""timeStamp"":""2023-06-08"",
+""message"": ""Vendor details updated successfully”
+}"
+/api/v1/product/name/{product_code}/{product_name},Update Product’s Product name,Product,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",PUT,"{
+""timeStamp"":""2023-06-08"",
+""message"": ""Product name details updated successfully”
+}"
+api/v1/product/scale/{product_code}/{produc_scale},Update Product’s Product Scale,Product,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",PUT,"{
+""timeStamp"":""2023-06-08"",
+""message"": ""Product Scale details updated successfully”
+}"
+/api/v1/productlines/all,Get All ProductLines,ProductLines,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",GET,Collection of ProductLines.
+/api/v1/productlines/add,Add new ProductLines,ProductLines,"{""timeStamp"":""2023-06-08"",
+""message"": ""Validation failed”}",POST,"{
+""timeStamp"":""2023-06-08"",
+""message"": ""ProductLines details added successfully”
+}"
